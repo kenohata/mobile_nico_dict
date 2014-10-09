@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/kenohata/nico_dict.git
+  revision: 6037e477f0f8f73695ec51fe19b203708a14bedc
+  specs:
+    nico_dict (0.0.1)
+      nokogiri (~> 1.6.3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,6 +35,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -38,6 +47,13 @@ GEM
     coffee-script-source (1.8.0)
     erubis (2.7.0)
     execjs (2.2.1)
+    haml (4.0.5)
+      tilt
+    haml-rails (0.5.3)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      haml (>= 3.1, < 5.0)
+      railties (>= 4.0.1)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (2.2.2)
@@ -50,8 +66,11 @@ GEM
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.1)
+    mini_portile (0.6.0)
     minitest (5.4.2)
     multi_json (1.10.1)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -108,9 +127,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   coffee-rails (~> 4.0.0)
+  haml-rails
   jbuilder (~> 2.0)
   jquery-rails
+  nico_dict!
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
