@@ -1,2 +1,3 @@
-%h1 Words#show
-%p Find me in app/views/words/show.html.haml
+%h1= @word.word
+
+= raw @word.html.at_css("#article")
